@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+
+body{
+    background-color: silver;
+    color: snow;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+                    /*Header Code*/
+header{
+    width: auto;
+    padding: 18px;
+    color: aqua;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+header:hover{
+    color: yellow;
+    background-color: lightgreen;
+}
+/* Animation for the Header Code */
+.loading {
+    left:0;right:0;top:50%;
+    margin:auto;
+    transform:translateY(0%);
+    
+  }
+  
+  .loading span {
+    position:relative;
+    z-index:999;
+    color:#fff;
+  }
+  .loading:before {
+    content:'';
+    background: orangered;
+    width:200px;
+    height:36px;
+    display:block;
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    
+    animation:2s loadingBefore infinite ease-in-out;
+  }
+  
+  @keyframes loadingBefore {
+    0%   {transform:translateX(-14px);}
+    50%  {transform:translateX(14px);}
+    100% {transform:translateX(-14px);}
+  }
+  
+  
+  .loading:after {
+    content:'';
+    background: blue;
+    width:14px;
+    height:60px;
+    display:block;
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    opacity:.5;
+    
+    animation:2s loadingAfter infinite ease-in-out;
+  }
+  
+  @keyframes loadingAfter {
+    0%   {transform:translateX(-50px);}
+    50%  {transform:translateX(50px);}
+    100% {transform:translateX(-50px);}
+}
+/* End of the Header Code*/
+
+
+                    /*Navbar Code*/
+.navbar1{
+    overflow: hidden;
+    padding: 10px;
+    background-color: lightslategray;
+    text-align: left !important;
+    float: left;
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+}
+/* End of the Header Code*/
+
+
+                    /*Footer Code*/
+footer{
+    background-color: darkcyan;
+    padding: 10px;
+    text-align: center;
+    color:black;
+}
+/* End of the Footer Code*/
+
+
+.h3{
+    padding: 10px;
+    color: whitesmoke;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: x-large;
+    text-shadow:2px 2px 5px black;
+}
+h3:hover{
+    color: yellow;
+    background-color: lightgreen;
+    transform: translateY(-px);
+}
+i:hover{
+    opacity: 1;
+    transform: translateY(-3px);
+}
+.column {
+    float: left;
+    width: 32%;
+    padding: 10px;
+    font-size: large;
+    color: #051937;
+    height: 500px; /* Should be removed. Only for demonstration */
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 1000px) {
+    .column {
+      width: 100%;
+    }
+}
+.column1 {
+    float: left;
+    width: 32%;
+    padding: 40px 10px 10px 10px;
+    font-size: large;
+    color: #051937;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 1000px) {
+    .column1{
+      width: 100%;
+    }
+}
+.img1{
+    border-radius: 5px;
+    height: 150x;
+    width: 120px;
+    align-items: center;
+}
+.div2{
+    text-shadow: 1px 1px 3px black;
+    font-size: large;
+    float: left;
+    font-style: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div3{
+    text-shadow: 1px 1px 3px black;
+    font-size: medium;
+    float: left;
+    font-style: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke
+}
+
+
+
+
+
+
+
+/* Animation for the swing text animation Code */
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    background:url(https://image.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg);
+    font-family: "Roboto Condensed", cursive;
+    div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 30px;
+        padding-top: 10px;
+        margin-top: -10px;
+        
+    }
+}
+
+.li {
+    font-family: Serif;
+    color: yellowgreen;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 20px;
+    margin-bottom: 45px;
+    display: block;
+}
+
+.flip3 { animation: flip3 4s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -200px; }
+    23% { margin-top: -180px; }
+    38% { margin-top: -100px; }
+    58% { margin-top: -50px; }
+    71% { margin-top: 20px; }
+    80% { margin-top: 20px; }
+    90% { margin-top: 20px; }
+    99.99% { margin-top: 20px; }
+    100% { margin-top: -270px; }
+}
